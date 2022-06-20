@@ -13,6 +13,10 @@ ul, ol, menu {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .section {
     padding: 50px 360px;
 }
@@ -30,14 +34,17 @@ header .section {
     height: 47px;
 }
 
+[class^='content']:not(.content-footer-bottom) > * {
+    border: 2px dashed black;
+}
+
 [class^='content'] > * {
     background-color: #daa520;
-    border: 2px dashed black;
     font-size: 20px;
     align-items: center;
     line-height: 45px;
 }
-.content > * * {
+[class^='content'] > * * {
     color: black;
 }
 
@@ -48,9 +55,7 @@ header .section {
 .content > .nav-link {
     flex-basis: 60%;
 }
-.content > .nav-link * {
-    text-decoration: none;
-}
+
 .content > .button-login {
     flex-basis: 20%;
     text-align: right;
@@ -121,13 +126,18 @@ main > .section:nth-child(odd) {
 
 /* FOOTER ------------------------*/
 
-.section.footer {
+.section.footer.top {
     background-color: #23272a;
     padding-top: 10px;
+    padding-bottom: 40px;
+    display: flex;
+    border-bottom: 2px solid #9a9a9a;
+    min-height: 600px;
 }
 
-.section.footer.top {
-    display: flex;
+.section.footer.bottom {
+    background-color: #23272a;
+    padding-bottom: 0;
     border-bottom: 2px solid #9a9a9a;
 }
 
@@ -154,3 +164,17 @@ main > .section:nth-child(odd) {
     border: 2px dashed #fff;
     flex-grow: 1;
 }
+
+.content-footer-bottom > ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    background-color: #7fffd4;
+}
+
+.button-footer > a {
+    background-color: #ffb6c1;
+    border: 2px dashed black;
+    padding: 5px 10px;
+}
+
