@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+.section {
+    padding: 50px 360px;
+}
+
+/* HEADER -------------------------*/
+
+header .section {
+    background-color: #add8e6;
+    padding: 17px 360px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    height: 47px;
+}
+
+.content > * {
+    background-color: #daa520;
+    border: 2px dashed black;
+    font-size: 20px;
+    align-items: center;
+    line-height: 45px;
+}
+.content > * * {
+    color: black;
+}
+
+.content > .img-logo {
+    flex-basis: 20%;
+    padding-left: 10px;
+}
+.content > .nav-link {
+    flex-basis: 60%;
+}
+.content > .nav-link * {
+    text-decoration: none;
+}
+.content > .button-login {
+    flex-basis: 20%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.nav-link {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* MAIN ---------------------------*/
+
+main {
+    background-color: #add8e6;
+    height: 500vh;
+}
+
+/* 1° SECTION */
+
+.section.header {
+    padding: 50px 500px;
+}
+
+.content1 {
+    background-color: #ee82ee;
+    min-height: 458px;
+    border: 2px dashed black;
+    margin-bottom: 2px;
+}
+
+main > .section.header:first-child {
+    background-color: #00008b;
+    
+}
+
+/* 2° SECTION --------------------*/
+
+main > .section > .content {
+    display: flex;
+    min-height: 500px;
+}
+.content.reverse {
+    flex-direction: row-reverse;
+}
+.content > .text {
+    flex-grow: 3;
+}
+.content > .img {
+    flex-grow: 2;
+}
+
+
+/* REST SECTION MAIN */
+main > .section:nth-child(even) {
+    background-color: #ffffff;
+}
+main > .section:nth-child(odd) {
+    background-color: #d3d3d3;
+}
+
