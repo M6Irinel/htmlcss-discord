@@ -264,11 +264,10 @@ svg {
 .section.footer.top,
 .section.footer.bottom {
     background-color: #23272a;
-    border-bottom: 2px solid #9a9a9a;
 }
 
 .section.footer.top {
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 
 .content.first,
@@ -300,6 +299,7 @@ svg {
 .content.first .language {
     font-size: 18px;
     color: #fff;
+    cursor: pointer;
 }
 
 .content.first .language::before {
@@ -327,6 +327,7 @@ svg {
     filter: invert(1);
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .content-footer h3 {
@@ -343,26 +344,41 @@ svg {
 }
 
 .content-footer ul li a:hover {
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
 
 /* part bottom */
 
-.content.footer.bottom>ul {
+.content.footer.bottom > ul {
     justify-content: space-between;
-    padding: 20px 0;
-    background-color: #7fffd4;
+    padding: 25px 0;
 }
 
 .button-footer {
-    background-color: #ffb6c1;
-}
-
-.button-footer {
-    padding: 5px 10px;
+    cursor: pointer;
+    padding: 5px 0;
 }
 
 .section.footer.bottom {
-    padding-bottom: 0;
+    padding-bottom: 30px;
+}
+
+.content.footer.bottom {
+    border-top: 2px solid #4f5d8c;
+}
+.section.footer.bottom * {
+    vertical-align: middle;
+}
+
+.section.footer.bottom a {
+    background-color: #6175bf;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: calc(38px / 2);
+}
+
+.section.footer.bottom a:hover {
+    background-color: #7983f5;
+    text-decoration: underline;
 }
