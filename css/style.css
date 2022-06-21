@@ -15,7 +15,6 @@ ul, ol, menu {
 
 .section {
     width: 100%;
-    padding: 50px 0;
 }
 
 .content {
@@ -91,12 +90,10 @@ header .section .content > * {
     background-image: url('../img/jumbo.png');
     background-position: center;
     background-size: cover;
-    border-bottom: 4px solid #add8e6;
 }
 
 .section.header .content {
     min-height: 400px;
-    /* background-color: #ee82ee; */
     text-align: center;
     color: #fff;
 }
@@ -153,11 +150,19 @@ header .section .content > * {
 
 /* main ============================================*/
 
-
 /* main main */
 
+.section.main:first-of-type {
+    padding-top: 100px;
+}
+
+.section.main:last-of-type {
+    padding-bottom: 100px;
+}
+
 .section .content.main {
-    height: 500px;
+    height: 600px;
+    gap: 50px;
 }
 
 .section .content.main.reverse {
@@ -165,24 +170,90 @@ header .section .content > * {
 }
 
 .text {
-    flex-basis: 60%;
-    background-color: #1e90ff;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.text h2 {
+    font-size: 55px;
+}
+
+.text p {
+    font-size: 25px;
 }
 
 .img {
-    flex-grow: 1;
-    background-color: #ffc0cb;
+    flex-basis: 60%;
+    height: 450px;
 }
 
-.section.main:nth-child(even) {
-    background-color: #d3d3d3;
+.section.main:nth-of-type(even) {
+    background-color: #f6f6f6;
+}
+
+svg {
+    display: block;
 }
 
 /* main footer */
 
 .content.main.footer {
-    min-height: 900px;
-    background-color: #228b22;
+    flex-direction: column;
+    min-height: 1200px;
+    text-align: center;
+    gap: 40px;
+}
+
+.content.main.footer h2 {
+    font-size: 55px;
+}
+
+.content.content.main.footer p {
+    font-size: 25px;
+}
+
+.content.content.main.footer div {
+    font-size: 30px;
+    background-image: url('../img/stars.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 20px;
+    line-height: 150px;
+    display: inline-block;
+    width: 550px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.content.content.main.footer a {
+    cursor: pointer;
+    background-color: #6175bf;
+    display: inline-block;
+    width: 240px;
+    padding: 15px;
+    font-size: 25px;
+    margin: 0 auto;
+    border-radius: 30px;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.content.content.main.footer a:hover {
+    background-color: #7983f5;
+    box-shadow: 0 5px 15px gray;
+    transition: all 0.3s;
+}
+
+.content.content.main.footer a::before {
+    content: '\1F817';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+
 }
 
 /* footer ==========================================*/
