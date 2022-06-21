@@ -6,9 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: black;
     text-decoration: none;
-    font-size: 20px;
 }
 
 ul, ol, menu {
@@ -21,7 +19,7 @@ ul, ol, menu {
 }
 
 .content {
-    width: 1200px;
+    width: 1180px;
     margin: 0 auto;
 }
 
@@ -38,12 +36,16 @@ ul, ol, menu {
 header .section {
     background-color: #add8e6;
     padding: 17px 0;
+    font-size: 15px;
+}
+
+header .section {
+    background-color: #255ee9;
 }
 
 header .section .content {
     justify-content: space-between;
     align-items: center;
-    background-color: #daa520;
 }
 
 header .section .content > * {
@@ -54,31 +56,99 @@ header .section .content > * {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    flex-grow: 1;
+    gap: 40px;
     line-height: 45px;
+}
+
+.nav-link li a {
+    color: #fff;
+}
+
+.nav-link li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .img-logo, .button-login {
-    line-height: 45px;
-    flex-basis: 20%;
-    padding: 0 10px;
+    cursor: pointer;
 }
 
 .button-login {
+    color: #23272a;
+    font-size: 14px;
+    padding: 10px 16px;
+    background-color: #fff;
     text-align: right;
+    border-radius: calc(45px / 2);
+}
+
+.button-login:hover {
+    color: #5865f2;
 }
 
 .section.header {
-    padding: 50px 0;
-    background-color: #00008b;
+    padding: 160px 0 50px;
+    background-image: url('../img/jumbo.png');
+    background-position: center;
+    background-size: cover;
     border-bottom: 4px solid #add8e6;
 }
 
 .section.header .content {
-    max-width: 900px;
     min-height: 400px;
-    background-color: #ee82ee;
+    /* background-color: #ee82ee; */
+    text-align: center;
+    color: #fff;
+}
+
+.section.header .content h1 {
+    font-size: 65px;
+    margin: 20px 0 35px;
+}
+
+.section.header .content p {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.pulsanti_header {
+    justify-content: center;
+    gap: 25px;
+}
+
+.pulsanti_header * {
+    font-size: 26px;
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: calc(62px / 2);
+    cursor: pointer;
+}
+
+.scarica {
+    background-color: #fff;
+    color: black;
+}
+
+.scarica:hover {
+    color: #5865f2;
+}
+
+.scarica::before {
+    content: '\1F817';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.apri {
+    background-color: #23272a;
+}
+
+.apri:hover {
+    background-color: #36393f;
 }
 
 /* main ============================================*/
