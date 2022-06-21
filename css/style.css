@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
@@ -9,7 +8,9 @@
     text-decoration: none;
 }
 
-ul, ol, menu {
+ul,
+ol,
+menu {
     list-style: none;
 }
 
@@ -47,7 +48,7 @@ header .section .content {
     align-items: center;
 }
 
-header .section .content > * {
+header .section .content>* {
     height: 100%;
 }
 
@@ -68,7 +69,8 @@ header .section .content > * {
     text-decoration: underline;
 }
 
-.img-logo, .button-login {
+.img-logo,
+.button-login {
     cursor: pointer;
 }
 
@@ -259,37 +261,95 @@ svg {
 /* footer ==========================================*/
 /* part top */
 
-.section.footer.top, .section.footer.bottom {
+.section.footer.top,
+.section.footer.bottom {
     background-color: #23272a;
     border-bottom: 2px solid #9a9a9a;
 }
 
 .section.footer.top {
-    padding: 10px 0 40px;
+    padding: 50px 0;
 }
 
-.content.first, .content.last {
-    min-height: 550px;
+.content.first,
+.content.last {
+    min-height: 440px;
 }
 
 .content.first {
     flex-basis: 33.33%;
-    background-color: #f08080;
 }
 
 .content.last {
     flex-basis: 66.67%;
-    background-color: #20b2aa;
 }
 
 .content-footer {
-    border: 2px dashed #fff;
     flex-grow: 1;
 }
 
+.content.first>* {
+    margin: 20px 0;
+}
+
+.content.first h2 {
+    font-size: 40px;
+    color: #7289d9;
+}
+
+.content.first .language {
+    font-size: 18px;
+    color: #fff;
+}
+
+.content.first .language::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    background-color: red;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.content.first .language::after {
+    content: '\2B9F';
+    display: inline-block;
+    font-weight: 900;
+    margin-left: 5px;
+}
+
+.icons {
+    gap: 20px;
+}
+
+.icons img {
+    filter: invert(1);
+    width: 30px;
+    height: 30px;
+}
+
+.content-footer h3 {
+    color: #7289d9;
+    font-size: 16px;
+}
+
+.content-footer ul li {
+    margin-top: 20px;
+}
+
+.content-footer ul li a {
+    color: #fff;
+}
+
+.content-footer ul li a:hover {
+   text-decoration: underline;
+}
+
+
 /* part bottom */
 
-.content.footer.bottom > ul {
+.content.footer.bottom>ul {
     justify-content: space-between;
     padding: 20px 0;
     background-color: #7fffd4;
